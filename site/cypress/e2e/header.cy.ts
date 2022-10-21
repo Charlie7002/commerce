@@ -16,6 +16,9 @@ describe('header', () => {
     cy.visit('/')
 
     cy.getBySel('search-input').eq(0).type('jeans{enter}')
-    cy.get('[data-test="product-name"]').should('contain', 'Super Jeans')
+
+    cy.get('[data-test="product-card"]').within(() => {
+      cy.get('[data-test="product-name"]').should('contain', 'jeans')
+    })
   })
 })
