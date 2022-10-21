@@ -39,6 +39,7 @@ const Searchbar: FC<Props> = ({ className, id = 'search' }) => {
       </label>
       <input
         id={id}
+        data-test="search-input"
         className={s.input}
         placeholder="Search for products..."
         defaultValue={router.query.q}
