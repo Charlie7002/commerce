@@ -13,8 +13,8 @@ jobs:
         with:
           project: ./site
           browser: chrome
-          build: pnpm run build
-          start: pnpm run start
+          build: npm run build
+          start: npm run start
           wait-on: 'http://localhost:3000'
 
         env:
