@@ -13,8 +13,8 @@ jobs:
         with:
           project: ./site
           browser: chrome
-          build: npm run build
-          start: npm run start
+          build: pnpm turbo run build
+          start: pnpm turbo run start
           wait-on: 'http://localhost:3000'
 
         env:
